@@ -6,12 +6,12 @@ const CoinGecko = require('coingecko-api');
 const router = express.Router();
 
 var _coinList = {};
-const btc = "";
+
 
 const CoinGeckoClient = new CoinGecko();
 
-
-    let fire = async()=>{let data = await CoinGeckoClient.exchanges.fetchTickers('bitfinex', {
+let here = async() => {
+    let data = await CoinGeckoClient.exchanges.fetchTickers('bitfinex', {
         coin_ids: ['bitcoin']
     });
     var _coinList = {};
@@ -23,16 +23,13 @@ const CoinGeckoClient = new CoinGecko();
         var _res = _temp.length == 0 ? [] : _temp[0];
         _coinList[i] = _res.last;
     })
- return _coinList;
+    return _coinList.BTC;
 }
 
-fire().then(k => console.log(k));
 
 
 
 
-
-// const btc = _coinList.BTC;
 
 router.get('/', (req, res) => {
     res.render('home');
@@ -81,21 +78,17 @@ router.post('/login', async(req, res) => {
     // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-    fire().then(k => k.BTC).then(k=> {
-        res.render('login-success', {btc: k})
-    });
-    
 
+    here().then(k => res.render('login-success', { btc: k }));
 
- ;
 
 });
 
 
-router.post('/register', (req,res)=> {
-    fire().then(k => k.BTC).then(k=> {
-        res.render('login-success', {btc: k})
-    });
+router.post('/register', (req, res) => {
+
+    here().then(k => res.render('login-success', { btc: k }));
+
 });
 
 
