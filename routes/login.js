@@ -79,7 +79,7 @@ router.post('/login', async(req, res) => {
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
 
-    here().then(k => res.render('login-success', { btc: k }));
+    here().then(btc => res.render('login-success', { btc: btc }));
 
 
 });
@@ -87,7 +87,7 @@ router.post('/login', async(req, res) => {
 
 router.post('/register', (req, res) => {
 
-    here().then(k => res.render('login-success', { btc: k }));
+    here().then(btc => res.render('login-success', { btc: btc }));
 
 });
 

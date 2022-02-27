@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const CoinGecko = require('coingecko-api');
 
 const loginRoutes = require('./routes/login')
 
@@ -15,6 +16,6 @@ app.use(loginRoutes);
 
 
 
-app.listen(process.env.port || 3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("Server is up and running ");
 });
