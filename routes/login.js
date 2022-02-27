@@ -5,7 +5,7 @@ const CoinGecko = require('coingecko-api');
 
 const router = express.Router();
 
-var _coinList = {};
+
 
 
 const CoinGeckoClient = new CoinGecko();
@@ -23,7 +23,7 @@ let here = async() => {
         var _res = _temp.length == 0 ? [] : _temp[0];
         _coinList[i] = _res.last;
     })
-    return _coinList.BTC;
+    return parseInt(_coinList.BTC);
 }
 
 
