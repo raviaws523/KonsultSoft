@@ -1,60 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="/css/newlogon2.css" />
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.0.custom.min.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="/css/font-awesome/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.0.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome/font-awesome.min.css" />
 
-<title>VClub</title>
+    <title>VClub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="onion-location" content="http://vclubccvd426icndg43sjpaowcdkiatcmdfj3zw4mc2z6zwbhvecwmyd.onion" />
-        <meta charset="utf-8">
-    </head>
+    <meta http-equiv="onion-location" content="http://vclubccvd426icndg43sjpaowcdkiatcmdfj3zw4mc2z6zwbhvecwmyd.onion" />
+    <meta charset="utf-8">
+</head>
+
 <body class="text-center">
 
-<div class="container">
-    <div class="row">
-    <div class="col align-self-center">
-        <div class="text registration" style="margin-bottom:20px;">
-            Registration: <strong>Open</strong>, Registration Fee:
-            <strong>$90</strong><br/>
-            <span style="color:red;">Please Note Inactive users Without Balance will be deleted Weekly</span>
-        </div>
-
-        <div class="form">
-            <form id="yw0" action="/register" method="post">
-<input type="hidden" value="Z3ZRNH5JQmtlN29Fa0FfcVNJV3ZtRHBGU1JDUzFDYnXFmluf_1cxD3zNmZxRebfxTt4yhWGcslxNeXLf3n7dKg==" name="YII_CSRF_TOKEN" />                            <div style="width:453px;">
-                    <div class="control-group-inline">
-                        <div class="form-group"><label class="control-label required" for="P_SignInForm_username">Username <span class="required">*</span></label><div class="controls"><input id="inputUsername" class="form-control" placeholder="Username*" name="P_SignInForm[username]" type="text" /></div></div>                        <div class="form-group"><label class="control-label required" for="P_SignInForm_jabber">Jabber <span class="required">*</span></label><div class="controls"><input id="inputEmail" class="form-control" placeholder="Jabber*" style="margin-left:15px;" name="P_SignInForm[jabber]" type="text" /></div></div>                    </div>
-                    <div class="control-group-inline">
-                        <div class="form-group"><label class="control-label required" for="P_SignInForm_password">Password <span class="required">*</span></label><div class="controls"><input id="inputPassword" class="form-control" placeholder="Password*" name="P_SignInForm[password]" type="password" maxlength="64" /></div></div>                        <div class="form-group"><label class="control-label required" for="P_SignInForm_password2">Repeat password <span class="required">*</span></label><div class="controls"><input id="inputPassword2" class="form-control" placeholder="Re-Password*" style="margin-left:15px;" name="P_SignInForm[password2]" type="password" /></div></div>                    </div>
-                                            <div class="control-group-inline">
-                            <div class="form-group"><label class="control-label" for="P_SignInForm_invitationCode">Invitation Code</label><div class="controls"><input id="inputInvite" class="form-control" placeholder="Invitation code*" style="width:454px;" name="P_SignInForm[invitationCode]" type="text" /></div></div>                        </div>
-                                        <div class="control-group-inline">
-                        <div class="form-group"><label class="control-label required" for="P_SignInForm_verifyCode">Captcha <span class="required">*</span></label><div class="controls"><input id="inputCaptcha" autocomplete="off" class="form-control half" placeholder="Captcha*" name="P_SignInForm[verifyCode]" type="text" /></div></div>                        <div class="captcha"
-                             id="captcha"><img id="yw1" src="/css/images/captcha2.png" alt="" /></div>
-                        <div style="display:inline-block; float:right;"><div class="form-actions"><button class="green btn btn-secondary" style="margin-right:3px; width:210px; float:right;" type="submit" name="yt0">Register</button></div></div>
-                        
-                    </div>
-
-                    <div class="col-lg-8">
-                        You can get <span style="color:red">invitation code</span> and news using our telegram bot:
-                        <a href="https://t.me/Vclubshop_Bot" target="_blank">
-                            <img src="../../images/telegram.svg" width="32" height="32" alt="Telegram logo"/>
-                            @Vclubshop_Bot</a>. Go to bot in telegram, click on <span
-                                class="badge badge-primary">/start</span> button and enter command <span
-                                class="badge badge-primary">/invite</span>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-center">
+                <div class="text registration" style="margin-bottom:20px;">
+                    Registration: <strong>Open</strong>, Registration Fee:
+                    <strong>$90</strong><br/>
+                    <span style="color:red;">Please Note Inactive users Without Balance will be deleted Weekly</span> <br>
+                    <span style="color:red;">Invite Code: vclub-shop</span>
                 </div>
-                        </form>
+
+                <div class="form">
+                    <form id="yw0" action="/register" method="post">
+                        <input type="hidden" value="Z3ZRNH5JQmtlN29Fa0FfcVNJV3ZtRHBGU1JDUzFDYnXFmluf_1cxD3zNmZxRebfxTt4yhWGcslxNeXLf3n7dKg==" name="YII_CSRF_TOKEN" />
+                        <div style="width:453px;">
+                            <div class="control-group-inline">
+                                <div class="form-group"><label class="control-label required" for="P_SignInForm_username">Username <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputUsername" class="form-control" placeholder="Username*" name="P_SignInForm[username]" type="text" /></div>
+                                </div>
+                                <div class="form-group"><label class="control-label required" for="P_SignInForm_jabber">Jabber <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputEmail" class="form-control" placeholder="Jabber*" style="margin-left:15px;" name="P_SignInForm[jabber]" type="text" /></div>
+                                </div>
+                            </div>
+                            <div class="control-group-inline">
+                                <div class="form-group"><label class="control-label required" for="P_SignInForm_password">Password <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputPassword" class="form-control" placeholder="Password*" name="P_SignInForm[password]" type="password" maxlength="64" /></div>
+                                </div>
+                                <div class="form-group"><label class="control-label required" for="P_SignInForm_password2">Repeat password <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputPassword2" class="form-control" placeholder="Re-Password*" style="margin-left:15px;" name="P_SignInForm[password2]" type="password" /></div>
+                                </div>
+                            </div>
+                            <div class="control-group-inline">
+                                <div class="form-group"><label class="control-label" for="P_SignInForm_invitationCode">Invitation Code</label>
+                                    <div class="controls"><input id="inputInvite" class="form-control" placeholder="Invitation code*" style="width:454px;" name="P_SignInForm[invitationCode]" type="text" /></div>
+                                </div>
+                            </div>
+                            <div class="control-group-inline">
+                                <div class="form-group"><label class="control-label required" for="P_SignInForm_verifyCode">Captcha <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputCaptcha" autocomplete="off" class="form-control half" placeholder="Captcha*" name="P_SignInForm[verifyCode]" type="text" /></div>
+                                </div>
+                                <div class="captcha" id="captcha"><img id="yw1" src="/css/images/captcha2.png" alt="" /></div>
+                                <div style="display:inline-block; float:right;">
+                                    <div class="form-actions"><button class="green btn btn-secondary" style="margin-right:3px; width:210px; float:right;" type="submit" name="yt0">Register</button></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-8">
+                                You can get <span style="color:red">invitation code</span> and news using our telegram bot:
+                                <a href="https://t.me/Vclubshop_Bot" target="_blank">
+                                    <img src="../../images/telegram.svg" width="32" height="32" alt="Telegram logo" /> @Vclubshop_Bot
+                                </a>. Go to bot in telegram, click on <span class="badge badge-primary">/start</span> button and enter command <span class="badge badge-primary">/invite</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
 </body>
+
 </html>
